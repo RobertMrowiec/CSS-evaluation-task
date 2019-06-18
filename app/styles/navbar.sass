@@ -1,5 +1,7 @@
 i 
 	padding-left: 20px
+	align-items: center
+
 .navbar
 	width: 100%
 	display: flex
@@ -17,5 +19,19 @@ i
 
 .routes
 	display: flex
+	position: relative
 	a
-		padding: 0 10px
+		margin: 0 1.5vw
+
+		&:hover
+			position:absolute
+			border-bottom: 1px solid grey
+
+
+.searchbox
+	background-color: transparent
+	height: 20px
+	margin: 0 10px
+	border-radius: 20px
+	&::placeholder
+		padding-left: 10px
