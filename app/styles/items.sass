@@ -9,16 +9,20 @@
 	margin: 0 auto
 	width: 60vw
 
-
 .card
 	width: 10vw
 
 	&.-title
+		color: #b3b3b3
 		padding-top: 4vh
+
+	&.-black
+		color: #515151
 
 	&.-description
 		padding-top: 3vh
-		font-size: 0.8em
+		line-height: 20px
+		font-size: 0.78em
 		color: #5f5f5f
 
 	&.-details
@@ -27,14 +31,18 @@
 		position: absolute
 		bottom: 3vh
 
-	&.-learnMore
+	&.-learn-more
 		color: #e16463
 		display: flex
 		position: absolute
 		bottom: 3vh
 
-		hr
-			width: 30px
-			border: none
-			border-top: 2px solid
-			background-color: #e16463
+	hr
+		background-color: #e16463
+		border: 0
+		height: 2px
+		margin: 4px 10px 0 0
+		width: 30px
+
+.uppercase
+	text-transform: uppercase
