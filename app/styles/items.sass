@@ -1,5 +1,40 @@
 .items
-	// display: flex
+	display: flex
 	background-color: white
 	height: 25vh
-	width: 80vw
+
+.products-container
+	justify-content: space-around
+	display: flex
+	margin: 0 auto
+	width: 60vw
+
+
+.card
+	width: 10vw
+
+	&.-title
+		padding-top: 4vh
+
+	&.-description
+		padding-top: 3vh
+		font-size: 0.8em
+		color: #5f5f5f
+
+	&.-details
+		letter-spacing: 10px
+		font-size: 2em
+		position: absolute
+		bottom: 3vh
+
+	&.-learnMore
+		color: #e16463
+		display: flex
+		position: absolute
+		bottom: 3vh
+
+		hr
+			width: 30px
+			border: none
+			border-top: 2px solid
+			background-color: #e16463
