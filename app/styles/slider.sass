@@ -8,6 +8,12 @@
 	&__left
 		width: 12vw
 
+	&--options
+		position: absolute
+		bottom: 6vh
+		right: 0vw
+		display: flex
+
 	&__right
 		display: flex
 		width: 68vw
@@ -24,7 +30,7 @@
 				font-weight: 200
 				font-family: Lato
 				font-size: 90px
-
+ 
 			p
 				color: #afafaf
 				word-spacing: 6px
@@ -35,13 +41,14 @@
 				border-left: 1px solid #cccccc
 
 			.p-border
-				height: 18vh
+				height: 16vh
 				display: flex
 				align-items: flex-start
 
 		&.-photos
-			justify-content: center
 			align-items: center
+			justify-content: center
+			position: relative
 			width: 34vw
 
 			img
@@ -64,3 +71,46 @@
 	font-weight: 100
 	color: #585858
 	z-index: -1
+
+.lines
+	width: 8vw
+	display: flex
+	flex-direction: row
+
+	hr
+		transform: rotate(90deg)
+		border-style: solid
+		color: #8f8f8f
+		margin: 0 2.5vw 0 0
+
+		&:first-child
+			color: white
+
+.circles
+	display: flex
+
+	.circle
+		height: 30px
+		width: 30px
+		border: 2px solid #979797
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		&:first-child
+			margin-right: 15px
+
+.inside-triangle
+	width: 0
+	height: 0
+	display: flex
+	justify-content: center
+	align-items: center
+	border-bottom: 4px solid transparent
+	border-top: 4px solid transparent
+
+	&.-left
+		border-right: 4px solid #979797
+
+	&.-right
+		border-left: 4px solid #979797
