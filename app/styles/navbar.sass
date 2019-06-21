@@ -4,39 +4,41 @@ i
 	padding-left: 20px
 
 .navbar
-	display: flex
+	align-items: flex-end
 	color: #8f8f8f
+	display: flex
 	height: 10vh
 	width: 75vw
-	align-items: flex-end
 
 .left
 	justify-content: flex-start
 
 .right
 	display: flex
-	width: 100%
 	justify-content: flex-end
+	width: 100%
 
 .routes
 	display: flex
+
 	a
-		margin: 0 1.5vw
 		cursor: pointer
+		margin: 0 1.5vw
 
 		&:last-child
+			border-bottom: 1px solid grey
 			color: white
 			margin-bottom: -5px
-			border-bottom: 1px solid grey
 
 
 .searchbox
-	border-style: solid
-	border-color: #8f8f8f
 	background-color: transparent
+	border-color: #8f8f8f
+	border-radius: 20px
+	border-style: solid
 	height: 20px
 	margin: 0 10px
-	border-radius: 20px
+
 	&::placeholder
 		font-size: 0.9em
 		padding-left: 10px
