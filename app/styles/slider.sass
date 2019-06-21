@@ -4,18 +4,18 @@
 
 	&__description
 		float: left
-	
+
 	&__left
-		border: 1px solid black
 		width: 12vw
 
 	&__right
-		border: 1px solid black
+		display: flex
 		width: 68vw
 
 		&.-text
 			height: 100%
 			width: 29vw
+			flex-direction: column
 
 			h1
 				align-items: center
@@ -26,6 +26,7 @@
 				font-size: 90px
 
 			p
+				color: #afafaf
 				word-spacing: 6px
 				font-size: 16.2px
 				font-weight: 400
@@ -39,12 +40,27 @@
 				align-items: flex-start
 
 		&.-photos
+			justify-content: center
+			align-items: center
 			width: 34vw
+
+			img
+				height: 35vh
+				width: 40vw
 
 .triangle
 	width: 0
 	height: 0
 	position: absolute
 	right: 0px
-	border-top: 5px solid white
-	border-left: 5px solid transparent
+	border-top: 7px solid white
+	border-left: 7px solid transparent
+
+.background-text
+	position: absolute
+	right: 0
+	margin-right: -30px
+	font-size: 19em
+	font-weight: 100
+	color: #585858
+	z-index: -1

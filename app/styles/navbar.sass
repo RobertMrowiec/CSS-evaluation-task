@@ -1,10 +1,11 @@
 i
-	padding-left: 20px
 	align-items: center
+	display: flex !important
+	padding-left: 20px
 
 .navbar
 	display: flex
-	color: rgba(255,255,255,0.7)
+	color: #8f8f8f
 	height: 10vh
 	width: 75vw
 	align-items: flex-end
@@ -21,14 +22,21 @@ i
 	display: flex
 	a
 		margin: 0 1.5vw
+		cursor: pointer
 
-		&:hover
+		&:last-child
+			color: white
+			margin-bottom: -5px
 			border-bottom: 1px solid grey
 
+
 .searchbox
+	border-style: solid
+	border-color: #8f8f8f
 	background-color: transparent
 	height: 20px
 	margin: 0 10px
 	border-radius: 20px
 	&::placeholder
+		font-size: 0.9em
 		padding-left: 10px
