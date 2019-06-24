@@ -8,27 +8,26 @@ i
 	color: #8f8f8f
 	display: flex
 	height: 10vh
-	width: 75vw
 
-.left
-	justify-content: flex-start
+	&__logo
+		justify-content: flex-start
 
-.right
-	display: flex
-	justify-content: flex-end
-	width: 100%
+	&__items
+		display: flex
+		justify-content: flex-end
+		width: 100%
 
-.routes
-	display: flex
+	&__routes
+		display: flex
 
-	a
-		cursor: pointer
-		margin: 0 1.5vw
+		a
+			cursor: pointer
+			margin: 0 1.5vw
 
-		&:last-child
-			border-bottom: 1px solid grey
-			color: white
-			margin-bottom: -5px
+			&:last-child
+				border-bottom: 1px solid grey
+				color: white
+				margin-bottom: -5px
 
 
 .searchbox
@@ -40,5 +39,4 @@ i
 	margin: 0 10px
 
 	&::placeholder
-		font-size: 0.9em
 		padding-left: 10px
